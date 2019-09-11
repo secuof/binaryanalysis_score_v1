@@ -2119,6 +2119,7 @@ def lookup_identifier(scanqueue, reportqueue, cursor, conn, scanenv, topleveldir
 
 					if len(pkgs) != 1:
 						print(pkgs)
+						print("=========================================================================================================================================")
 						nonUniqueMatchLines.append(line)
 						## The string found is not unique to a package, but is it 
 						## unique to a filename?
