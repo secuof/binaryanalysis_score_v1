@@ -1880,6 +1880,7 @@ def lookup_identifier(scanqueue, reportqueue, cursor, conn, scanenv, topleveldir
 				lines.sort()
 
 			stringquery = "select package, filename FROM %s WHERE stringidentifier=" % stringsdbperlanguagetable[language] + "%s"
+			print(stringquery)
 
 			for line in lines:
 				#if scandebug:
