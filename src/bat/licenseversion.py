@@ -2115,7 +2115,7 @@ def lookup_identifier(scanqueue, reportqueue, cursor, conn, scanenv, topleveldir
 						else:
 							filenames[sourcefilename] = list(set(filenames[sourcefilename] + [package]))
 
-					scalar = 1;
+					scalar = 1
 
 					if len(pkgs) != 1:
 						nonUniqueMatchLines.append(line)
