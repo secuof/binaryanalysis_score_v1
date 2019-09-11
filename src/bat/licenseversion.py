@@ -2118,7 +2118,7 @@ def lookup_identifier(scanqueue, reportqueue, cursor, conn, scanenv, topleveldir
 					scalar = 1
 
 					if len(pkgs) != 1:
-						print(pkgs)
+						# print(pkgs)
 						print("=========================================================================================================================================")
 						nonUniqueMatchLines.append(line)
 						## The string found is not unique to a package, but is it 
