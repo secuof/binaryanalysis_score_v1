@@ -2119,8 +2119,6 @@ def lookup_identifier(scanqueue, reportqueue, cursor, conn, scanenv, topleveldir
 					scalar = 1
 
 					if len(pkgs) != 1:
-						# print(pkgs)
-						print("=========================================================================================================================================")
 						nonUniqueMatchLines.append(line)
 						## The string found is not unique to a package, but is it 
 						## unique to a filename?
@@ -2131,7 +2129,7 @@ def lookup_identifier(scanqueue, reportqueue, cursor, conn, scanenv, topleveldir
 						## now determine the score for the string
 						try:
 							score = (1 * scalar) / pow(alpha, (len(filenames) - 1))
-							print(score)
+							print(filenames)
 						except Exception, e:
 							## pow(alpha, (len(filenames) - 1)) is overflowing here
 							## so the score would be very close to 0. The largest value
