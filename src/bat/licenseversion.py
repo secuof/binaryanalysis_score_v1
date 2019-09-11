@@ -2129,7 +2129,8 @@ def lookup_identifier(scanqueue, reportqueue, cursor, conn, scanenv, topleveldir
 						## now determine the score for the string
 						try:
 							score = (1 * scalar) / pow(alpha, (len(filenames) - 1))
-							print(filenames)
+							print(filenames, len(filenames))
+							print("======================================================")
 						except Exception, e:
 							## pow(alpha, (len(filenames) - 1)) is overflowing here
 							## so the score would be very close to 0. The largest value
